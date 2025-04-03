@@ -6,12 +6,12 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const pool = new Pool({
-    user: process.env.DB_PGUSER,
-    host: process.env.DB_PGHOST,
+    user:     process.env.DB_PGUSER,
+    host:     process.env.DB_PGHOST,
     database: process.env.DB_PGDATABASE,
     password: process.env.DB_PGPASSWORD,
-    port: process.env.DB_PGPORT,
-    max: 20,
+    port:     process.env.DB_PGPORT,
+    max:      20,
     idleTimeoutMillis: 30000,
     connectionTimeoutMillis: 2000,
     });
