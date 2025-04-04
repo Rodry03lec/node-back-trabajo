@@ -9,6 +9,9 @@ const Router = express.Router()
 Router.get('/mapa/prueba', mapaController.funPrueba)
 Router.post('/mapa/departamento', mapaController.funDepartamento)
 Router.get('/mapa/listaDepartamennto', mapaController.funListaDepartamento)
+Router.post('/mapa/buscarDepMun', mapaController.funBusquedaDepMum)
+Router.post('/mapa/departamentoMunicipioVer', mapaController.funDepartMunicipio)
+Router.get('/mapa/pruebaPunto', mapaController.funPruebaPunto)
 
 export default Router
 
