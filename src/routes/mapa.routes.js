@@ -6,9 +6,6 @@ const Router = express.Router()
 
 // http://127.0.0.1:3000/api/v1/auth/login
 
-Router.get('/mapa/prueba', mapaController.funPrueba)
-Router.post('/mapa/departamento', mapaController.funDepartamento)
-Router.get('/mapa/listaDepartamennto', mapaController.funListaDepartamento)
 Router.post('/mapa/buscarDepMun', mapaController.funBusquedaDepMum)
 Router.post('/mapa/departamentoMunicipioVer', mapaController.funDepartMunicipio)
 Router.get('/mapa/pruebaPunto', mapaController.funPruebaPunto)
